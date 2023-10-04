@@ -1,6 +1,6 @@
 # nvim config
 
-This config aims to provide nice navigation between files and core functionalities
+This config aims to provide better navigation between files and core functionalities
 
 ![Gif-Example](https://github.com/fischer8/nvim/blob/main/test-demo2.gif?raw=true)
 
