@@ -1,0 +1,78 @@
+:help wincmd 
+
+------ horizontal scroll ------ 
+
+  zs - Scroll the text horizontally to position the cursor
+        at the start (left side) of the screen.  
+
+  ze - Scroll the text horizontally to position the cursor
+			at the end (right side) of the screen. 
+
+------ marks  ------
+
+  ma - set mark a at current cursor location
+  'a - jump to line of mark a
+  `a - jump to position
+  c'a - change text from current line to line of mark a  
+  :marks - list all the current marks
+  :delmarks! - deletes all marks
+
+
+------ d motions ------
+
+  A short list of motions:
+    w - until the start of the next word, EXCLUDING its first character.
+    e - to the end of the current word, INCLUDING the last character.
+    $ - to the end of the line, INCLUDING the last character.
+
+------ To insert or append text type ------
+
+	 i   type inserted text   <ESC>		insert before the cursor
+	 A   type appended text   <ESC>         append after the line
+
+------ Shifting blocks visually ------
+
+  In normal mode, type >> to indent the current line, or << to unindent. 
+  Each command can be used with a count. The operators > and < do the same for motions, 
+  text objects and visual selections. For all commands, pressing . repeats the operation.
+
+  Typing 5>>.. shifts five lines to the right, and then repeats the operation twice
+  In insert mode, Ctrl-T indents the current line, and Ctrl-D unindents.
+
+
+------ Quickly change word or line ------
+
+To quickly change a word you can use cw,caw or ciw. Use c$ or just C to quickly change from 
+the cursor to the end of a line, cc to change an entire line, or cis for a sentence.
+
+
+
+------ Focus in vim split through the command mode ------
+
+1) :h win_getid() to get (and then save) current window identifier
+
+2) Do your splits
+
+3) Go back to your saved window with :h win_gotoid()
+
+Ex:
+
+" get current window identifier
+let wid = win_getid()
+
+" do splits
+split newfile
+vert split anotherfile
+
+" go back
+call win_gotoid(wid)
+
+_________________________________________________
+I wouldn't worry about maintaining focus in current window while you're opening others. 
+Just mark your location, open everything, and jump back to that position. 
+Really easy way to do that is use a capital letter mark (e.g. mX) and return with backtick then that letter. 
+To run Normal mode commands in a function see :h :normal. 
+Non-Normal mode way is to save the current cursor location with :h getpos(), and return with :h setpos().
+– B Layer
+ May 15, 2021 at 9:37 
+ __________________________________________________
