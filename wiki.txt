@@ -1,5 +1,8 @@
 :help wincmd 
 
+
+
+
 ------ horizontal scroll ------ 
 
   zs - Scroll the text horizontally to position the cursor
