@@ -2,6 +2,8 @@
 
 This config aims to provide nice navigation between files and core functionalities
 
+![Gif-Example]()
+
 Theme:
 - rose-pine
 
