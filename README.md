@@ -2,7 +2,7 @@
 
 This config aims to provide nice navigation between files and core functionalities
 
-![Gif-Example]()
+![Gif-Example](https://github.com/fischer8/nvim/blob/main/test-demo.gif?raw=true)
 
 Theme:
 - rose-pine
