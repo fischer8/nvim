@@ -76,6 +76,4 @@ Just mark your location, open everything, and jump back to that position.
 Really easy way to do that is use a capital letter mark (e.g. mX) and return with backtick then that letter. 
 To run Normal mode commands in a function see :h :normal. 
 Non-Normal mode way is to save the current cursor location with :h getpos(), and return with :h setpos().
-– B Layer
- May 15, 2021 at 9:37 
  __________________________________________________
