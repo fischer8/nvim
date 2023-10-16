@@ -24,7 +24,6 @@ vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { noremap = true, silent = true })
 vim.keymap.set("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
 vim.keymap.set("i", "<A-j>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
 
--- Display editable .txt for personal annotations
 function Annotations(filename)
   vim.cmd('split')
   local new_buffer = vim.api.nvim_get_current_buf()
@@ -34,7 +33,6 @@ function Annotations(filename)
 end
 vim.api.nvim_set_keymap('n', '<Leader>o', ":lua Annotations('~/.config/nvim/wiki.txt')<CR>", { noremap = true, silent = true })
 
--- Handle diagnostics float box
 local is_diagnostic_float_open = false
 function Toggle_diagnostic_float()
   if is_diagnostic_float_open then

@@ -5,6 +5,8 @@ require("mason-lspconfig").setup({
     "docker_compose_language_service" }
 })
 
+vim.keymap.set("n", "<leader>ch", function() vim.lsp.buf.hover() end, {})
+
 local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(client, bufnr)

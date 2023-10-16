@@ -1,11 +1,10 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-
   use('wbthomason/packer.nvim')
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.3',
-    requires = { { 'nvim-lua/plenary.nvim' } }
+    requires = { { 'nvim-lua/plenary.nvim' } },
   }
   use({ 'rose-pine/neovim', as = 'rose-pine' })
   use('m4xshen/autoclose.nvim')
@@ -15,8 +14,8 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-nvim-lsp')
   use('jose-elias-alvarez/null-ls.nvim')
   use('jay-babu/mason-null-ls.nvim')
---  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-  use{'nvim-treesitter/nvim-treesitter', commit = '7c27beddda182a178eafd978a96cc35738d6be98'} --last working commit
+  --  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  use { 'nvim-treesitter/nvim-treesitter', commit = '7c27beddda182a178eafd978a96cc35738d6be98' } --last working commit
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('ThePrimeagen/vim-be-good')
