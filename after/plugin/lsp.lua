@@ -6,6 +6,7 @@ require("mason-lspconfig").setup({
 })
 
 vim.keymap.set("n", "<leader>ch", function() vim.lsp.buf.hover() end, {})
+vim.keymap.set("n", "<leader>n", function() vim.lsp.buf.format() end)
 
 local lsp = require('lsp-zero').preset({})
 

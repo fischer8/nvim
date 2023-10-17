@@ -1,15 +1,11 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<C-s>", vim.cmd.wa)
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
-vim.keymap.set("n", "0", ":2ToggleTerm<CR>")
-vim.keymap.set("n", "+", ":3ToggleTerm<CR>")
-vim.keymap.set("n", "<leader>/", ":1ToggleTerm<CR>")
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
 vim.keymap.set("n", "<leader>h", vim.cmd.split)
 vim.keymap.set("n", "<leader><leader>", vim.cmd.so)
 vim.keymap.set("n", "<CR>", vim.cmd.noh, { silent = true })
 vim.keymap.set("n", "<leader>q", function() vim.cmd("q!") end)
-vim.keymap.set("n", "<leader>n", function() vim.lsp.buf.format() end)
 vim.keymap.set("n", "<leader>s", ":Vexplore!<CR>", { silent = true })
 vim.keymap.set("n", "<C-Left>", ":vertical resize +25<CR>", { silent = true })
 vim.keymap.set("n", "<C-Right>", ":vertical resize -25<CR>", { silent = true })
