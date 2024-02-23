@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.3',
     requires = { { 'nvim-lua/plenary.nvim' } },
   }
+
   use({ 'rose-pine/neovim', as = 'rose-pine' })
   use('m4xshen/autoclose.nvim')
   use('windwp/nvim-ts-autotag')
