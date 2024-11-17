@@ -7,8 +7,6 @@ find . -type f -name *.lua -print
 :help wincmd 
 
 
-
-
 ------ horizontal scroll ------ 
 
   zs - Scroll the text horizontally to position the cursor
