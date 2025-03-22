@@ -1,9 +1,5 @@
 # nvim config
 
-This config aims to provide better navigation between files and core functionalities
-
-![Gif-Example](https://user-images.githubusercontent.com/104164663/272637145-5fd19aa1-ce2b-4655-9b99-b0a0d41deb42.gif)
-
 Theme:
 - rose-pine
 
